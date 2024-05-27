@@ -1,0 +1,41 @@
+.main-div{
+    background-image: linear-gradient( white, #ddeff6);
+    padding: 4rem 6rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.shadow-div{
+    box-shadow: 0px 0px 7px 0px grey ;
+}
+
+.date-time-div{
+    width: 100%;
+}
+
+.date-time-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.sun-time-div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.time-div{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.date-div{
+    font-size: xx-large;
+    font-weight: 600;
+    text-wrap: wrap;
+}
