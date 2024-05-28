@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
-// import { AdminStaffInformationComponent } from './admin-staff-information/admin-staff-information.component';
-// import { AdminComponent } from './admin/admin.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-// import { AdminComponent } from './admin/admin.component';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+
+
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { AdminStudentInformationComponent } from './admin-student-information/admin-student-information.component';
 import { AdminAnnouncementsComponent } from './admin-announcements/admin-announcements.component';
 
@@ -22,13 +22,9 @@ import { AdminAnnouncementsComponent } from './admin-announcements/admin-announc
   declarations: [
     AppComponent,
     SignInComponent,
-    AdminDashboardComponent,
-    // AdminComponent,
-    // AdminSidebarComponent,
+    // AdminDashboardComponent,
     AdminStudentInformationComponent,
     AdminAnnouncementsComponent
-    // AdminStaffInformationComponent,
-    // AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +36,8 @@ import { AdminAnnouncementsComponent } from './admin-announcements/admin-announc
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatDatepickerModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

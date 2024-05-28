@@ -8,16 +8,11 @@ import { AdminStudentInformationComponent } from './admin-student-information/ad
 import { AdminAnnouncementsComponent } from './admin-announcements/admin-announcements.component';
 
 const routes: Routes = [
-  // { path: "", component: SignInComponent },
-  // { path: "admin", component: AdminComponent },
-  // { path: "admin/dashboard", component: AdminDashboardComponent },
   { path: '', redirectTo: 'admin/dashboard', pathMatch:'full'},
   { path: 'admin/dashboard', component: AdminDashboardComponent },
   { path: 'admin/staff', component: AdminStaffInformationComponent },
   { path: 'admin/students', component: AdminStudentInformationComponent },
   { path: 'admin/announcements', component: AdminAnnouncementsComponent },
-  // { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, // Default route
-  // { path: '**', redirectTo: '/dashboard' } // Fallback route
 
 ];
 
