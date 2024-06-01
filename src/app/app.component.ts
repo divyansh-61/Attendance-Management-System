@@ -25,4 +25,24 @@ export class AppComponent implements OnDestroy {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
+
+  public innerWidth: any;
+  isDisabled!: boolean;
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth < 600) {
+      this.isDisabled = false;
+    } else {
+      this.isDisabled = true;
+    }
+  }
+
+  snavToggle(snav: any){
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <= 600) {
+      snav.toggle();
+    }
+  }
+
 }

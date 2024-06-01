@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -11,6 +11,13 @@
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
+    background-color: #ddeff6;
+}
+
+.example-toolbar {
+    position: absolute;
+    width: fit-content !important;
 }
 
 .example-is-mobile .example-toolbar {
@@ -19,8 +26,16 @@
     z-index: 2;
 }
 
+.custom-div {
+    padding: 1rem 0.4rem;
+}
+
 h1.example-app-name {
-    margin-left: 8px;
+    margin-left: 12px;
+    margin-right: 4vw;
+    font-size: xx-large;
+    text-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .example-sidenav-container {
@@ -39,4 +54,37 @@ mat-nav-list>a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+::ng-deep .sidenav {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: end;
+    box-shadow: 0px 0px 10px 5px grey !important;
+    height: 100% !important;
+}
+
+button {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.active-link {
+    color: white !important;
+    background-color: #00BAF8;
+}
+
+.snav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .sidenav {
+        width: 100% !important;
+    }
 }

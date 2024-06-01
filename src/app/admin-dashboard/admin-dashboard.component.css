@@ -1,8 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .main-div {
-    background-image: linear-gradient(white, #ddeff6);
-    padding: 4rem 6rem;
-    display: flex;
-    gap: 6rem;
+    background-image: linear-gradient(135deg, white, #ddeff6 20%, #a8dbef);
+    padding: 3.5rem 4rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4rem;
+    overflow: hidden;
+    width: 100%;
 }
 
 .shadow-div {
@@ -11,7 +20,7 @@
 }
 
 .date-time-div {
-    width: 100%;
+    width: 60%;
 }
 
 .date-time-div {
@@ -22,6 +31,11 @@
     padding: 1rem;
     width: 100%;
 }
+
+/* .calendar-div{
+    width: 40rem;
+    height: 21.3rem;
+} */
 
 .sun-time-div {
     display: flex;
@@ -44,9 +58,82 @@
 .date-time-calendar {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2.5rem;
+    width: 45%;
 }
 
 .demo-inline-calendar-card {
-    width: 300px;
+    
+    /* width: 30rem; */
+    /* height: 5rem !important; */
+    width: 100%;
+    height: fit-content;
+}
+
+.department-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40rem;
+}
+
+.department-div>p{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.student-info-div{
+    width: 100%;
+}
+
+.student-info-div>p{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.dept-stdnt-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 65%;
+}
+
+.teacher-div{
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.8rem;
+}
+
+.staff-img-and-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.staff-img-and-name>img{
+    width: 2.4rem;
+}
+
+.see-all-button-div{
+    display: flex;
+    justify-content: end;
+}
+
+.see-all-button{
+    background-color: #00BAF9;
+    color: white;
+    padding: 0.6rem 3rem;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+}
+
+.student-details{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.2rem;
 }

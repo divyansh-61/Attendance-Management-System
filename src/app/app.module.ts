@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
@@ -22,7 +23,7 @@ import { AdminAnnouncementsComponent } from './admin-announcements/admin-announc
   declarations: [
     AppComponent,
     SignInComponent,
-    // AdminDashboardComponent,
+    AdminDashboardComponent,
     AdminStudentInformationComponent,
     AdminAnnouncementsComponent
   ],
@@ -38,6 +39,7 @@ import { AdminAnnouncementsComponent } from './admin-announcements/admin-announc
     MatListModule,
     MatDatepickerModule,
     MatCardModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
