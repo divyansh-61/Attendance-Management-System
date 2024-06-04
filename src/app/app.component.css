@@ -32,10 +32,9 @@
 
 h1.example-app-name {
     margin-left: 12px;
-    margin-right: 4vw;
     font-size: xx-large;
     text-wrap: wrap;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .example-sidenav-container {
@@ -72,19 +71,58 @@ button {
     border-radius: 50%;
 }
 
-.active-link {
+::ng-deep .sidenav .active-link {
     color: white !important;
-    background-color: #00BAF8;
+    background-color: #00BAF8 !important;
 }
 
 .snav-item {
+    padding: 2rem 0rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
+    color: #6F6A6A;
 }
 
-@media (max-width: 600px) {
+.snav-item>span{
+    font-size: larger;
+}
+
+@media (max-width: 720px) {
     .sidenav {
         width: 100% !important;
     }
+}
+
+.search-div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 2rem 0rem 1rem 0rem;
+    padding: 0.6rem 1rem;
+    background-color: #e3e4e6;
+    border-radius: 8px;
+    font-size: large;
+}
+
+.search-div>input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+hr{
+    border: 1px solid #e3e4e6;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.divider-line-div{
+    display: flex;
+    justify-content: center;
+}
+
+.snav-link-items{
+    margin: 0rem 0rem 0rem 0.5rem;
+    border-radius: 10px;
 }

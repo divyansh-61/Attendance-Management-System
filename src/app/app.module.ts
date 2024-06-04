@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
@@ -39,7 +40,8 @@ import { AdminAnnouncementsComponent } from './admin-announcements/admin-announc
     MatListModule,
     MatDatepickerModule,
     MatCardModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

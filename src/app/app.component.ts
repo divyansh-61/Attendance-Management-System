@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent implements OnDestroy {
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this.mobileQuery = media.matchMedia('(max-width: 720px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -29,20 +30,15 @@ export class AppComponent implements OnDestroy {
   public innerWidth: any;
   isDisabled!: boolean;
 
-  ngOnInit() {
+  snavToggle(snav: any) {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 600) {
-      this.isDisabled = false;
-    } else {
-      this.isDisabled = true;
+    if (this.innerWidth <= 720) {
+      snav.toggle();
     }
   }
 
-  snavToggle(snav: any){
-    this.innerWidth = window.innerWidth;
-    if (this.innerWidth <= 600) {
-      snav.toggle();
-    }
+  tap(e: any) {
+    e.style.backgroundColor ? e.style.color = "#fff" : null;
   }
 
 }
